@@ -49,8 +49,8 @@ const BookEdit = (props) =>
                             {props.categories.map((term)=>{
                                 if(props.book.category !== undefined &&
                                    props.book.category === term)
-                                    return <option key={term.id} selected={props.book.category} value={props.book.category}>{term}</option>
-                                        else return <option value={term.id}>{term.name}</option>
+                                    return <option key={term} selected={props.book.category} value={props.book.category}>{term}</option>
+                                        else return <option value={term}>{term}</option>
                             })}
                         </select>
                     </div>

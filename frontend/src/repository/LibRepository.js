@@ -25,7 +25,7 @@ const LibService = {
         });
     },
     editBook: (id,name,category,author,availableCopies) => {
-      return axios.put(`htpp://localhost:8080/books/edit/${id}`, {
+      return axios.put(`http://localhost:8080/books/edit/${id}`, {
           "name" : name,
           "category" : category,
           "author" : author,

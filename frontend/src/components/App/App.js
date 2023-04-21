@@ -33,7 +33,7 @@ class App extends Component {
                                                      onAddBook={this.addBook}/>} exact/>
                             <Route path={"/books/edit/:id"} element={<BookEdit categories={this.state.categories}
                                                                          authors={this.state.authors}
-                                                                         onEditBook={this.addBook}
+                                                                         onEditBook={this.editBook}
                                                                          book={this.state.selectedBook}/>} exact/>
 
 
